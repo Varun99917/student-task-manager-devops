@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div>
+                <h1>My Tasks</h1>
+                <p>Organize your day, one task at a time.</p>
+            </div>
+            <div class="logo">STM</div>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span>Total Tasks</span>
+                <h2 id="totalTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <span>Completed</span>
+                <h2 id="completedTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <span>Pending</span>
+                <h2 id="pendingTasks">0</h2>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2>Add a New Task</h2>
+
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                    required
+                >
+                <button type="submit">+ Add Task</button>
+            </form>
+
+            <div class="task-heading">
+                <h2>Your Tasks</h2>
+                <span id="taskCount">0 tasks</span>
+            </div>
+
+            <div id="taskList" class="task-list">
+                <p class="empty">Loading tasks...</p>
+            </div>
+        </section>
+
+        <footer>
+            Student Task Manager | Built with Node.js & MongoDB
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
